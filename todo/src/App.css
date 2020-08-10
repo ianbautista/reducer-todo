@@ -41,10 +41,56 @@
 
 /* PROJECT STYLING */
 * {
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
 }
 
+.main-div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 400px;
+  height: 690px;
+}
+
+h1 {
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.todoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 2px solid green;
+}
+
+li {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  width:80%;
+  height: 2rem;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: auto;
+}
 .completed {
   text-decoration: line-through;
   color: red;

@@ -28,7 +28,7 @@ export default function App() {
 	};
 
 	return (
-		<div className="App">
+		<div className="main-div">
 			<h1>To Do List</h1>
 			<AddTodo
 				currentTodo={currentTodo}
