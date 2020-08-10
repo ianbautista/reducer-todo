@@ -12,20 +12,30 @@ export default function App() {
 		dispatch({ type: "TOGGLE_COMPLETED", payload: todoId });
 	};
 
-	const handleChanges = (evt) => {
-		setCurrentTodo(evt.target.value);
+	const handleChanges = (e) => {
+		setCurrentTodo(e.target.value);
 	};
 
-	const handleSubmit = (evt) => {
-		evt.preventDefault();
+	const handleSubmit = (e) => {
+		e.preventDefault();
 		dispatch({ type: "ADD_TODO", payload: currentTodo });
 		setCurrentTodo("");
+	};
+
+	const clearCompleted = (e) => {
+		e.preventDefault();
+		dispatch({ type: "CLEAR_COMPLETED" });
 	};
 
 	return (
 		<div className="App">
 			<h1>To Do List</h1>
-			<AddTodo handleChanges={handleChanges} handleSubmit={handleSubmit} />
+			<AddTodo
+				currentTodo={currentTodo}
+				handleChanges={handleChanges}
+				handleSubmit={handleSubmit}
+				clearCompleted={clearCompleted}
+			/>
 			<Todos todos={state} toggleTask={toggleTask} />
 		</div>
 	);

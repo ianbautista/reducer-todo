@@ -13,6 +13,7 @@ export default function AddTodo(props) {
 				Add To do
 			</button>{" "}
 			<br />
+			<button onClick={props.clearCompleted}>Clear Completed</button>
 		</div>
 	);
 }

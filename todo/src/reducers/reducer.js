@@ -10,7 +10,7 @@ export const reducer = (state, action) => {
 				{
 					item: action.payload,
 					completed: false,
-					id: Date.now(),
+					id: Date(),
 				},
 			];
 		case "TOGGLE_COMPLETED":
@@ -24,5 +24,9 @@ export const reducer = (state, action) => {
 					return item;
 				}
 			});
+		case "CLEAR_COMPLETED":
+			return state.filter((item) => !item.completed);
+		default:
+			return state;
 	}
 };
