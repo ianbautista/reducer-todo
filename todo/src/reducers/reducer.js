@@ -4,7 +4,25 @@ export const initialState = [
 
 export const reducer = (state, action) => {
 	switch (action.type) {
-		default:
-			return state;
+		case "ADD_TODO":
+			return [
+				...state,
+				{
+					item: action.payload,
+					completed: false,
+					id: Date.now(),
+				},
+			];
+		case "TOGGLE_COMPLETED":
+			return state.map((item) => {
+				if (item.id === action.payload) {
+					return {
+						...item,
+						completed: !item.completed,
+					};
+				} else {
+					return item;
+				}
+			});
 	}
 };

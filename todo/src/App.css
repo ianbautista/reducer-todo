@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* PROJECT STYLING */
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: red;
+}
