@@ -11,7 +11,7 @@ export default function Todo(props) {
 				{item}{" "}
 				{completed ? (
 					<span>
-						<i class="fas fa-check"></i>
+						<i className="fas fa-check"></i>
 					</span>
 				) : (
 					""

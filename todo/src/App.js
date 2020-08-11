@@ -35,7 +35,7 @@ export default function App() {
 				handleChanges={handleChanges}
 				handleSubmit={handleSubmit}
 			/>
-			<Todos todos={state} toggleTask={toggleTask} clearCompleted={clearCompleted} />
+			<Todos state={state} toggleTask={toggleTask} clearCompleted={clearCompleted} />
 		</div>
 	);
 }

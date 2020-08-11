@@ -12,7 +12,7 @@ export default function AddTodo(props) {
 			/>
 			<br />
 			<button type="submit" onClick={props.handleSubmit}>
-				<i class="fas fa-plus-square"></i>
+				<i className="fas fa-plus-square"></i>
 			</button>
 		</div>
 	);
