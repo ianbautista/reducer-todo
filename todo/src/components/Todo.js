@@ -7,7 +7,16 @@ export default function Todo(props) {
 			onClick={() => props.toggleTask(id)}
 			className={`${completed ? "completed todoCard" : "todoCard"}`}
 		>
-			<li>{item}</li>
+			<li>
+				{item}{" "}
+				{completed ? (
+					<span>
+						<i class="fas fa-check"></i>
+					</span>
+				) : (
+					""
+				)}
+			</li>
 		</div>
 	);
 }

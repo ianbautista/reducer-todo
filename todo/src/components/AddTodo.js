@@ -2,18 +2,18 @@ import React from "react";
 
 export default function AddTodo(props) {
 	return (
-		<div class="add-todo">
+		<div className="add-todo">
 			<input
 				type="text"
 				name="currentTodo"
 				value={props.currentTodo}
 				onChange={props.handleChanges}
-			/>{" "}
-			<button type="submit" onClick={props.handleSubmit}>
-				Add To do
-			</button>{" "}
+				placeholder="add to do.."
+			/>
 			<br />
-			<button onClick={props.clearCompleted}>Clear Completed</button>
+			<button type="submit" onClick={props.handleSubmit}>
+				<i class="fas fa-plus-square"></i>
+			</button>
 		</div>
 	);
 }

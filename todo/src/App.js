@@ -34,9 +34,8 @@ export default function App() {
 				currentTodo={currentTodo}
 				handleChanges={handleChanges}
 				handleSubmit={handleSubmit}
-				clearCompleted={clearCompleted}
 			/>
-			<Todos todos={state} toggleTask={toggleTask} />
+			<Todos todos={state} toggleTask={toggleTask} clearCompleted={clearCompleted} />
 		</div>
 	);
 }
