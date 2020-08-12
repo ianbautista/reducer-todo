@@ -1,0 +1,161 @@
+
+/* PROJECT STYLING */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  border: 10px solid white;
+  border-radius: 20px;
+  width: 400px;
+  height: 700px;
+  margin-top: 5%;
+  overflow: scroll;
+}
+
+.main-div::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 1px 1px 1px grey;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid red; */
+  padding: unset;
+}
+
+button i:hover {
+  color: crimson;
+}
+
+button[type="submit"] i:hover {
+  color: green;
+}
+
+.todoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid green; */
+  margin: 0 auto;
+}
+
+.add-todo {
+  width: 100%;
+}
+
+button{
+  text-align: center;
+  align-content: center;
+  height: 5rem;
+  width: 5rem;
+  font-size: 4rem;
+  border: unset;
+  margin: 3%;
+  color: gray;
+  background-color: unset;
+}
+
+input[type="text"] {
+border: unset;
+border-radius: 10px;
+height: 5rem;
+width:90%;
+background-color: #ffffff;
+font-size: 2.5rem;
+padding-left: 5%;
+}
+
+input[type="text"]::selection {
+  border: unset;
+  border-radius: 10px;
+  height: 5rem;
+  width:90%;
+  background-color: #ffffff;
+  font-size: 2.5rem;
+  }
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+  background-color: white;
+  border-radius: 10px;
+  width:90%;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1%;
+}
+
+li:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+  background-color: white;
+  border-radius: 10px;
+  width:92%;
+  height: 4.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 1%;
+  box-shadow: 2px 2px 2px darkgrey;
+}
+
+
+.completed  li{
+  /* text-decoration: line-through crimson; */
+  color: crimson;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 10px;
+  width:90%;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1%;
+}
+
+.completed  li:hover{
+  /* text-decoration: line-through crimson; */
+  color: crimson;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 10px;
+  width:92%;
+  height: 4.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 1%;
+  box-shadow: 2px 2px 2px darkgrey;
+}
