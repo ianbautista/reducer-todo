@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 
 /* PROJECT STYLING */
 * {
@@ -25,9 +27,11 @@
 }
 
 h1 {
+  font-family: 'Righteous', cursive;
   font-size: 5rem;
   color: white;
   text-shadow: 1px 1px 1px grey;
+  margin: 5%;
 }
 
 ul {
@@ -91,6 +95,10 @@ input[type="text"]::selection {
   width:90%;
   background-color: #ffffff;
   font-size: 2.5rem;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
   }
 
 li {
