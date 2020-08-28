@@ -44,6 +44,12 @@ ul {
   padding: unset;
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button i:hover {
   color: crimson;
 }
@@ -64,6 +70,10 @@ button[type="submit"] i:hover {
 
 .add-todo {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 button{
